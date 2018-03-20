@@ -2,7 +2,11 @@
   <div class="col-10">
     <app-shopping-edit></app-shopping-edit>
   </div>
-  <div class="col-12"><hr></div>
-  <div class="col-10"><p>The list</p></div>
+  <hr>
+  <ul class="list-group">
+    <a class="list-group-item" style="cursor: pointer;"
+    *ngFor="let ing of igrendients">
+    {{ ing.name }}  ({{ ing.amount }})</a>
+  </ul>
   
 </div>
